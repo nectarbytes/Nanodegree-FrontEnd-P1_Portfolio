@@ -5,20 +5,23 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
   		<title>Portfolio</title>
+  		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
   		<link rel="stylesheet" type="text/css" href="css/normalize.css">
   		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
   		<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	</head>
 	<body>
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4">
-					<img src="http://placekitten.com/g/50/50" alt="XXXXX Logo">
+				<div class="col-md-6">
+					<img class="title-logo" src="http://lorempixel.com/g/75/75/animals/" alt="XXXXX Logo">
 				</div>
-				<div class="col-md-8 text-right text-uppercase">
-					<h1>Laura Curley</h1>
-					<h4>All-Round Developer</h4>
+				<div class="col-md-6 text-right text-uppercase">
+					<h1 class="text-thin title-super">Laura Curley</h1>
+					<h4>Full Stack Developer</h4>
 				</div>
 			</div>
 			<div class="row">
@@ -28,25 +31,82 @@
 			</div>
 			<div class="row">
 				<div class="col-md-12">
-					<img class="img-responsive" src="http://placekitten.com/g/1200/900	" alt="Main Image">
+					<img class="img-responsive" src="http://lorempixel.com/g/1200/900/animals/" alt="Main Image">
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-12">
-					<h2>Featured Work</h2>
+					<h2 class="text-muted">Featured Work</h2>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row text-center">
 				<div class="col-md-4">
-					<img class="img-responsive" src="http://placekitten.com/g/400/400	" alt="Main Image">
+					<img class="img-responsive" src="http://lorempixel.com/g/400/400/animals/" alt="Main Image" data-toggle="modal" data-target="#modal-basemail">
+					<h3>BASEMAIL</h3>
+					<p>https://github.com/udacity/Appify/</p>
 				</div>
 				<div class="col-md-4">
-					<img class="img-responsive" src="http://placekitten.com/g/400/400	" alt="Main Image">
+					<img class="img-responsive" src="http://lorempixel.com/g/400/400/nature/" alt="Main Image" data-toggle="modal" data-target="#modal-sae">
+					<h3>SAE</h3>
+					<p>https://github.com/udacity/sunflower</p>
 				</div>
 				<div class="col-md-4">
-					<img class="img-responsive" src="http://placekitten.com/g/400/400	" alt="Main Image">
+					<img class="img-responsive" src="http://lorempixel.com/g/400/400/animals/" alt="Main Image" data-toggle="modal" data-target="#modal-s4u">
+					<h3>S4U</h3>
+					<p>https://github.com/udacity/bokeh</p>
 				</div>
 			</div>
 		</div>
+		<!-- Modal for Basemail Project-->
+		<div class="modal fade" id="modal-basemail" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h4 class="modal-title" id="myModalLabel">Basemail Page</h4>
+		      </div>
+		      <div class="modal-body">
+		        <img class="img-responsive" src="http://lorempixel.com/g/600/600/animals/">
+		        This project involved creating an email solution for Quickbase. API calls to Quickbase and Mandrill were used, along with Mailchimp template integration.
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<!-- Modal for SAE Project-->
+		<div class="modal fade" id="modal-sae" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h4 class="modal-title" id="myModalLabel">SAE Project</h4>
+		      </div>
+		      <div class="modal-body">
+		        <img class="img-responsive" src="http://lorempixel.com/g/600/600/nature/">
+		        SAE's suite of international websites are built in Silverstripe. Refactoring, debugging, and adding featuers involved HTML, CSS, JS, jQuery, Sass, Coffee and Git Repo.
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<!-- Modal for S4U Project-->
+		<div class="modal fade" id="modal-s4u" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h4 class="modal-title" id="myModalLabel">S4U Project</h4>
+		      </div>
+		      <div class="modal-body">
+		        <img class="img-responsive" src="http://lorempixel.com/g/600/600/animals/">
+		        This project involved a gallery that users could upload as well as responsive graphs based on finanical information provided by members.
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
 	</body>
-</html>saeq
+</html>
